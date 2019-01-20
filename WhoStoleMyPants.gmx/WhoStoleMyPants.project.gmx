@@ -49,6 +49,7 @@
     <object>objects\obj_Player2</object>
     <object>objects\obj_Enemy1</object>
     <object>objects\obj_Bullet1</object>
+    <object>objects\obj_Bullet2</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_home1</object>
     <object>objects\obj_home2</object>

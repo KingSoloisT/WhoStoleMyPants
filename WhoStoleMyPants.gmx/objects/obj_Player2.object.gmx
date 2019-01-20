@@ -28,7 +28,35 @@
             <string>PlayerSpeed = 10;
 PlayerHealthPoints = 100;
 PlayerMove = true;
+CanShoot = true;
+HasPistol = true;
+HasRocketLauncher = false;
+HasMachineGun = false;
+HasShotGun = false;
 image_blend = c_blue;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>CanShoot = true;
 </string>
           </argument>
         </arguments>
@@ -55,6 +83,8 @@ image_blend = c_blue;
 KeyLeft = keyboard_check(vk_left);
 KeyDown = keyboard_check(vk_down);
 KeyRight = keyboard_check(vk_right);
+
+KeyAction = keyboard_check(ord('P'));
 
 if (KeyLeft &amp;&amp; KeyRight || KeyDown &amp;&amp; KeyUp)
 {
@@ -87,12 +117,39 @@ else
     }     
 }
 
+//Keeps player in the room.
 x = clamp(x, 0, room_width); 
 y = clamp(y, 0, room_height); 
 
 
 
 
+if (HasPistol)
+{
+    if (CanShoot)
+    {
+        if (KeyAction)
+        {
+            CanShoot = false;
+            alarm[0] = 1 * room_speed;
+            instance_create(obj_Player2.x, obj_Player2.y - 50, obj_Bullet2);
+        }
+    }
+}
+else if (HasRocketLauncher)
+{
+    
+}
+
+if (place_meeting(x, y, obj_Bullet1))
+{
+    PlayerHealthPoints -= 10;
+}
+
+if (PlayerHealthPoints &lt;= 0)
+{
+    //GAME OVER
+}
 
 
 
@@ -122,6 +179,29 @@ switch (keyboard_key)
         ;
 }
 */
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="64">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>draw_text(600, 600, PlayerHealthPoints);
 </string>
           </argument>
         </arguments>
