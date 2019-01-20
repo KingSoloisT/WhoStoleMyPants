@@ -4,7 +4,20 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="ag_fx">
+      <sound>sound\fx_machinebullet1</sound>
+      <sound>sound\fx_machinebullet2</sound>
+      <sound>sound\fx_shotgun</sound>
+      <sound>sound\fx_oof</sound>
+      <sound>sound\fx_bazooka</sound>
+      <sound>sound\fx_getshotgun</sound>
+      <sound>sound\fx_getmachinegun</sound>
+      <sound>sound\fx_getbazooka</sound>
+      <sound>sound\fx_p1pants</sound>
+      <sound>sound\fx_p2pants</sound>
+    </sounds>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
