@@ -162,6 +162,25 @@ if (PlayerHealthPoints &lt;= 0)
     //GAME OVER
 }
 
+if (global.pants2) &amp;&amp; place_meeting(x,y,obj_home2)
+{
+    room_goto(room2);
+}
+
+if (global.pants2) &amp;&amp; place_meeting(x,y,obj_Bullet1)
+{
+    global.pants2 = false;
+    instance_create(x, y, obj_pants);
+    x = obj_home2.x;
+    y = obj_home2.y;
+}
+
+if (global.pants2 == false) &amp;&amp; place_meeting(x,y,obj_Bullet1)
+{
+    x = obj_home2.x;
+    y = obj_home2.y;
+}
+
 
 
 
@@ -212,7 +231,7 @@ switch (keyboard_key)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(600, 600, PlayerHealthPoints);
+            <string>//draw_text(600, 600, PlayerHealthPoints);
 </string>
           </argument>
         </arguments>

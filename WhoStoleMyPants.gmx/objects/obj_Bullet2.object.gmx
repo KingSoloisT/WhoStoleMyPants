@@ -25,6 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
+            <string>image_blend = c_blue;
+</string>
             <string>audio_play_sound(fx_machinebullet1,1,false);
 </string>
           </argument>
@@ -49,6 +51,11 @@
           <argument>
             <kind>1</kind>
             <string>x -= global.BulletSpeed;
+
+if (place_meeting(x, y, obj_wall))
+{
+    instance_destroy();
+}
 </string>
           </argument>
         </arguments>

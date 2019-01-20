@@ -84,6 +84,7 @@ global.BulletSpeed = 15;
             <string>if global.pants = true
 {
     image_blend = c_yellow;
+    
 }
 
 if global.pants = false
@@ -169,6 +170,26 @@ if (PlayerHealthPoints &lt;= 0)
 {
     //GAME OVER
 }
+
+if (global.pants) &amp;&amp; place_meeting(x,y,obj_home1)
+{
+    room_goto(room2);
+}
+
+if (global.pants == false) &amp;&amp; place_meeting(x,y,obj_Bullet2)
+{
+    x = obj_home1.x;
+    y = obj_home1.y;
+}
+
+if (global.pants) &amp;&amp; place_meeting(x,y,obj_Bullet2)
+{
+    global.pants = false;
+    instance_create(x, y, obj_pants);
+    x = obj_home1.x;
+    y = obj_home1.y;
+    
+}
 </string>
           </argument>
         </arguments>
@@ -191,7 +212,7 @@ if (PlayerHealthPoints &lt;= 0)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_text(300, 300, PlayerHealthPoints);
+            <string>//draw_text(300, 300, PlayerHealthPoints);
 </string>
           </argument>
         </arguments>
