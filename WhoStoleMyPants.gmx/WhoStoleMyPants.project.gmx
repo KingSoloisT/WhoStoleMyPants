@@ -9,6 +9,17 @@
     <sprite>sprites\sprite0</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\spr_playerdown</sprite>
+    <sprite>sprites\spr_playerside</sprite>
+    <sprite>sprites\spr_playerup</sprite>
+    <sprite>sprites\spr_playerangledown</sprite>
+    <sprite>sprites\spr_pants</sprite>
+    <sprite>sprites\spr_bullet</sprite>
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_machinegun</sprite>
+    <sprite>sprites\spr_rocket</sprite>
+    <sprite>sprites\spr_shotgun</sprite>
+    <sprite>sprites\spr_explosion</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background1</background>
