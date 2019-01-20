@@ -43,6 +43,13 @@
     <object>objects\obj_Player2</object>
     <object>objects\obj_Enemy1</object>
     <object>objects\obj_Bullet1</object>
+    <object>objects\obj_wall</object>
+    <object>objects\obj_home1</object>
+    <object>objects\obj_home2</object>
+    <object>objects\obj_machinegun</object>
+    <object>objects\obj_rocket</object>
+    <object>objects\obj_shotgun</object>
+    <object>objects\obj_pants</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

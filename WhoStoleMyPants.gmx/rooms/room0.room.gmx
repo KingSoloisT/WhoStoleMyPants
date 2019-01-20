@@ -13,6 +13,24 @@
   <code>instance_create(480, 540, obj_Player1);
 instance_create(1440, 540, obj_Player2);
 
+
+//objects add randomizer for placement
+
+instance_create(640, 250, obj_wall);
+instance_create(1568, 832, obj_wall);
+instance_create(960, 576, obj_wall);
+instance_create(1312, 250, obj_wall);
+
+
+instance_create(540, 350, obj_machinegun);
+instance_create(1468, 632, obj_rocket);
+instance_create(860, 476, obj_shotgun);
+
+
+instance_create(312, 512, obj_home1);
+instance_create(1758, 512, obj_home2);
+
+instance_create(800, 376, obj_pants);
 /*
 enum colorState 
 {
