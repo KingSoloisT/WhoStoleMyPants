@@ -124,6 +124,7 @@ if (CanShoot)
         CanShoot = false;
         alarm[0] = 3 * room_speed;
         instance_create(obj_Player1.x, obj_Player1.y, obj_Bullet1);
+        audio_play_sound(fx_machinebullet1,1,false);
     }
 }
 x = clamp(x, 0, room_width); 

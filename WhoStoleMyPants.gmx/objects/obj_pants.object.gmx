@@ -71,6 +71,32 @@ if minus = true
 {
 grow -= 0.025;
 }
+
+if place_meeting(x,y,obj_Player1)
+{
+    if audio_is_playing(fx_p2pants)
+    {
+        audio_stop_sound(fx_p2pants)
+    }
+    
+    if !audio_is_playing(fx_p1pants)
+    {
+        audio_play_sound(fx_p1pants,1,false);
+    }
+}
+
+if place_meeting(x,y,obj_Player2)
+{
+    if audio_is_playing(fx_p1pants)
+    {
+        audio_stop_sound(fx_p1pants)
+    }
+    
+    if !audio_is_playing(fx_p2pants)
+    {
+        audio_play_sound(fx_p2pants,1,false);
+    }
+}
 </string>
           </argument>
         </arguments>

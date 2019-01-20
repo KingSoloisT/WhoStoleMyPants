@@ -10,7 +10,13 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(1280, 800,obj_pointer);</code>
+  <code>instance_create(1280, 800,obj_pointer);
+
+//Start dem BEATS!
+if !audio_is_playing(sng_title)
+{
+    audio_play_sound(sng_title,1,true);
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

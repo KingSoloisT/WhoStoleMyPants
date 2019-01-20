@@ -10,7 +10,14 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(480, 540, obj_Player1);
+  <code>//Stop dem BEATS!
+if audio_is_playing(sng_title)
+{
+    audio_stop_sound(sng_title);
+}
+
+
+instance_create(480, 540, obj_Player1);
 instance_create(1440, 540, obj_Player2);
 
 
