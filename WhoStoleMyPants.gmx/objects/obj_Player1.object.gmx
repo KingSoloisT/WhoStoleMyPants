@@ -30,6 +30,32 @@ PlayerHealthPoints = 100;
 PlayerMove = true;
 image_blend = c_red;
 image_xscale = -1;
+CanShoot = true;
+
+//alarm[0] = room_speed;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>CanShoot = true;
 </string>
           </argument>
         </arguments>
@@ -58,7 +84,7 @@ KeyLeft = keyboard_check(ord('A'));
 KeyDown = keyboard_check(ord('S'));
 KeyRight = keyboard_check(ord('D'));
 
-
+KeyAction = keyboard_check(ord('F'));
 
 if (KeyLeft &amp;&amp; KeyRight || KeyDown &amp;&amp; KeyUp)
 {
@@ -91,6 +117,15 @@ else
     }     
 }
 
+if (CanShoot)
+{
+    if (KeyAction)
+    {
+        CanShoot = false;
+        alarm[0] = 3 * room_speed;
+        instance_create(obj_Player1.x, obj_Player1.y, obj_Bullet1);
+    }
+}
 x = clamp(x, 0, room_width); 
 y = clamp(y, 0, room_height); 
 

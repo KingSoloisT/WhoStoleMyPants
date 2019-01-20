@@ -38,6 +38,7 @@
   <backgrounds name="background">
     <background>background\background1</background>
     <background>background\menu</background>
+    <background>background\background720</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
