@@ -10,6 +10,10 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
+  <code>//globals
+global.weapon = "normal" //normal,rapid,shot,rocket
+
+instance_create(480, 540, obj_Player1);
   <code>//Stop dem BEATS!
 if audio_is_playing(sng_title)
 {

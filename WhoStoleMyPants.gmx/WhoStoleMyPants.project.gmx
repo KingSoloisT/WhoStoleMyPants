@@ -28,6 +28,7 @@
     <sprite>sprites\spr_playerdown</sprite>
     <sprite>sprites\spr_pointer</sprite>
     <sprite>sprites\spr_playerside</sprite>
+    <sprite>sprites\spr_gun</sprite>
     <sprite>sprites\spr_playerup</sprite>
     <sprite>sprites\spr_playerangledown</sprite>
     <sprite>sprites\spr_pants</sprite>
@@ -42,6 +43,7 @@
     <background>background\background1</background>
     <background>background\menu</background>
     <background>background\background720</background>
+    <background>background\backgroundthanks</background>
   </backgrounds>
   <paths name="paths"/>
   <objects name="objects">
@@ -58,10 +60,12 @@
     <object>objects\obj_shotgun</object>
     <object>objects\obj_pants</object>
     <object>objects\obj_pointer</object>
+    <object>objects\obj_quit</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
     <room>rooms\room2</room>
+    <room>rooms\room3</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
