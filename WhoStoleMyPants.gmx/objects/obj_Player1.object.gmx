@@ -145,7 +145,6 @@ if (HasPistol)
             alarm[0] = 1 * room_speed;
             instance_create(obj_Player1.x, obj_Player1.y - 50, obj_Bullet1);
         }
-        audio_play_sound(fx_machinebullet1,1,false);
     }
 }
 else if (HasRocketLauncher)

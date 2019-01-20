@@ -19,6 +19,7 @@
     </sounds>
     <sounds name="ag_songs">
       <sound>sound\sng_title</sound>
+      <sound>sound\sng_leveltheme</sound>
     </sounds>
   </sounds>
   <sprites name="sprites">
