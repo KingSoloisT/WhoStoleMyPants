@@ -17,6 +17,9 @@
       <sound>sound\fx_p1pants</sound>
       <sound>sound\fx_p2pants</sound>
     </sounds>
+    <sounds name="ag_songs">
+      <sound>sound\sng_title</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprite0</sprite>
