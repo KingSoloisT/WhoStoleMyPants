@@ -93,25 +93,25 @@ if (KeyLeft &amp;&amp; KeyRight || KeyDown &amp;&amp; KeyUp)
 else
 {  
     //PlayerMove UP 
-    if (KeyUp)
+    if (KeyUp) &amp;&amp; !place_meeting(x, y - PlayerSpeed, obj_wall)
     {
         y -= PlayerSpeed;
     }
     
     //PlayerMove DOWN
-    if (KeyDown)
+    if (KeyDown) &amp;&amp; !place_meeting(x, y + PlayerSpeed, obj_wall)
     {
         y += PlayerSpeed;
     }
     
     //PlayerMove LEFT
-    if (KeyLeft)
+    if (KeyLeft) &amp;&amp; !place_meeting(x - PlayerSpeed, y, obj_wall)
     {
         x -= PlayerSpeed;
     }
     
     //PlayerMove RIGHT
-    if (KeyRight)
+    if (KeyRight) &amp;&amp; !place_meeting(x + PlayerSpeed, y, obj_wall)
     {
         x += PlayerSpeed;
     }     

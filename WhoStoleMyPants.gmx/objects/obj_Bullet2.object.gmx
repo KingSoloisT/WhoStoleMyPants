@@ -47,7 +47,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x -= 5;
+            <string>x -= global.BulletSpeed;
 </string>
           </argument>
         </arguments>
