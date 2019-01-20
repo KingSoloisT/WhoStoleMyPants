@@ -17,6 +17,8 @@
   <objects name="objects">
     <object>objects\obj_Player1</object>
     <object>objects\obj_Player2</object>
+    <object>objects\obj_Enemy1</object>
+    <object>objects\obj_Bullet1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>

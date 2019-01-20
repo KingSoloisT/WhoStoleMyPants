@@ -13,7 +13,7 @@
   <code>instance_create(480, 540, obj_Player1);
 instance_create(1440, 540, obj_Player2);
 
-
+/*
 enum colorState 
 {
    red,
@@ -25,7 +25,6 @@ enum colorState
    violet
 }
 
-black = State.red;
 
 key_up = keyboard_check(ord('W'));
 key_left = keyboard_check(ord('A'));
@@ -74,6 +73,40 @@ key_right = keyboard_check(ord('D'));
     default:
         //do nothing for now...
         ;
+}
+
+
+
+
+
+
+
+
+/*
+switch (ScolorState)
+{
+    //case EXPRESSION: STATEMENT; break;
+    //default: STATEMENT;
+    case colorState.red:
+}
+
+
+switch( eMiniPlayerState)
+{
+    case MiniPlayerState.Default:
+}
+    
+    
+enum MiniPlayerState
+{
+    Default,
+    Idle,
+    Moving,
+    Action,
+    ThrowFriz,//Need?
+    Animation,
+    Menu, //Pause State.
+    Dialogue //Dialogue State that player has to read or choose options.
 }</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>

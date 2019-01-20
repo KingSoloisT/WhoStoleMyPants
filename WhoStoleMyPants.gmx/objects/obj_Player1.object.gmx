@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>PlayerSpeed = 10;
+PlayerHealthPoints = 100;
+PlayerMove = true;
+</string>
           </argument>
         </arguments>
       </action>
@@ -48,33 +51,113 @@
           <argument>
             <kind>1</kind>
             <string>
-switch (ScolorState)
+KeyUp = keyboard_check(ord('W'));
+KeyLeft = keyboard_check(ord('A'));
+KeyDown = keyboard_check(ord('S'));
+KeyRight = keyboard_check(ord('D'));
+
+
+
+if (KeyLeft &amp;&amp; KeyRight || KeyDown &amp;&amp; KeyUp)
 {
-    //case EXPRESSION: STATEMENT; break;
-    //default: STATEMENT;
-    case colorState.red:
+    PlayerMove = false;
+}
+else
+{  
+    //PlayerMove UP 
+    if (KeyUp)
+    {
+        y -= PlayerSpeed;
+    }
+    
+    //PlayerMove DOWN
+    if (KeyDown)
+    {
+        y += PlayerSpeed;
+    }
+    
+    //PlayerMove LEFT
+    if (KeyLeft)
+    {
+        x -= PlayerSpeed;
+    }
+    
+    //PlayerMove RIGHT
+    if (KeyRight)
+    {
+        x += PlayerSpeed;
+    }     
 }
 
-switch( eMiniPlayerState)
-{
-    case MiniPlayerState.Default:
-}
+x = clamp(x, 0, room_width); 
+y = clamp(y, 0, room_height); 
+
+
+    
+
     
     
-enum MiniPlayerState
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+/*
+switch (keyboard_key)
 {
-    Default,
-    Idle,
-    Moving,
-    Action,
-    ThrowFriz,//Need?
-    Animation,
-    Menu, //Pause State.
-    Dialogue //Dialogue State that player has to read or choose options.
+    case ord('W'):
+    //case vk_up:
+        y -= 4;
+        break;
+    case ord('A'):
+    //case vk_left:
+        x -= 4;
+        break;
+    case ord('S'):
+    //case vk_down:
+        y += 4;
+        break;
+    case ord('D'):
+    //case vk_right:
+        x += 4;
+        break;
+    default:
+        //do nothing for now...
+        ;
 }
+*/
+
+
+
+
+
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
   </events>
