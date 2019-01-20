@@ -81,7 +81,15 @@ global.BulletSpeed = 15;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>
+            <string>if global.pants = true
+{
+    image_blend = c_yellow;
+}
+
+if global.pants = false
+{
+    image_blend = c_red;
+}
 
 
 

@@ -52,10 +52,23 @@ image_yscale = 0.5;
             <kind>1</kind>
             <string>if place_meeting(x,y,obj_Player1) || place_meeting(x,y,obj_Player2)
 {
+    global.weapon = "shot"
     if !audio_is_playing(fx_getshotgun)
     {
         audio_play_sound(fx_getshotgun,1,false);
     }
+    instance_destroy();
+}
+
+
+if place_meeting(x,y,obj_Player2)
+{
+    global.weapon2 = "shot"
+    if !audio_is_playing(fx_getshotgun)
+    {
+        audio_play_sound(fx_getshotgun,1,false);
+    }
+    instance_destroy();
 }
 </string>
           </argument>

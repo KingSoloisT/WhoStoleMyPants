@@ -79,7 +79,18 @@ image_blend = c_blue;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>KeyUp = keyboard_check(vk_up);
+            <string>if global.pants2 = true
+{
+    image_blend = c_yellow;
+}
+
+if global.pants2 = false
+{
+    image_blend = c_blue;
+}
+
+
+KeyUp = keyboard_check(vk_up);
 KeyLeft = keyboard_check(vk_left);
 KeyDown = keyboard_check(vk_down);
 KeyRight = keyboard_check(vk_right);
@@ -226,22 +237,22 @@ switch (keyboard_key)
             <kind>1</kind>
             <string>draw_self();
 
-if global.weapon = "normal"
+if global.weapon2 = "normal"
 {
 draw_sprite_ext(spr_gun,0,x,y,1,1,0,c_black,1);
 }
 
-if global.weapon = "rapid"
+if global.weapon2 = "rapid"
 {
 draw_sprite_ext(spr_gun,0,x,y,1,1,0,c_red,1);
 }
 
-if global.weapon = "shot"
+if global.weapon2 = "shot"
 {
 draw_sprite_ext(spr_gun,0,x,y,1,1,0,c_blue,1);
 }
 
-if global.weapon = "rocket"
+if global.weapon2 = "rocket"
 {
 draw_sprite_ext(spr_gun,0,x,y,1,1,0,c_green,1);
 }

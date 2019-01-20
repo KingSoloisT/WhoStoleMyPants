@@ -11,6 +11,9 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>global.weapon = "normal";
+global.weapon2 = "normal";
+global.pants = false;
+global.pants2 = false;
 
 //Stop dem BEATS!
 if audio_is_playing(sng_title)
