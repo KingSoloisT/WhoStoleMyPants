@@ -62,7 +62,11 @@
     <object>objects\obj_pointer</object>
     <object>objects\obj_quit</object>
   </objects>
-  <rooms name="rooms"/>
+  <rooms name="rooms">
+    <room>rooms\room2</room>
+    <room>rooms\room0</room>
+    <room>rooms\room3</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
