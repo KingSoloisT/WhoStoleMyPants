@@ -50,7 +50,7 @@ image_yscale = 0.5;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if place_meeting(x,y,obj_Player1) || place_meeting(x,y,obj_Player2)
+            <string>if place_meeting(x,y,obj_Player1)
 {
     global.weapon = "shot"
     if !audio_is_playing(fx_getshotgun)

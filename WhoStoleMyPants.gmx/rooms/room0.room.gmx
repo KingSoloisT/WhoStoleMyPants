@@ -139,8 +139,10 @@ enum MiniPlayerState
     Dialogue //Dialogue State that player has to read or choose options.
 }
 */
-
-audio_play_sound(sng_leveltheme,1,true);</code>
+if !audio_is_playing(sng_leveltheme)
+{
+    audio_play_sound(sng_leveltheme,1,true);
+}</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -16,6 +16,10 @@
 if !audio_is_playing(sng_title)
 {
     audio_play_sound(sng_title,1,true);
+}
+if audio_is_playing(sng_leveltheme)
+{
+    audio_stop_sound(sng_leveltheme);
 }</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>

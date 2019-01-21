@@ -16,6 +16,7 @@
       <sound>sound\fx_getbazooka</sound>
       <sound>sound\fx_p1pants</sound>
       <sound>sound\fx_p2pants</sound>
+      <sound>sound\fx_throw</sound>
     </sounds>
     <sounds name="ag_songs">
       <sound>sound\sng_title</sound>

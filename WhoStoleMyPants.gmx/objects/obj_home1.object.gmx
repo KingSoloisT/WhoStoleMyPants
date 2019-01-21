@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_blend = c_yellow;
+            <string>image_blend = c_blue;
 image_xscale = 0.75;
 image_yscale = 0.5;
 </string>
